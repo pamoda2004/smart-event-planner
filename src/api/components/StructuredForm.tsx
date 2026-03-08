@@ -55,7 +55,7 @@ export default function StructuredForm({
       </div>
 
       <div>
-        {/* Category */}
+        
         <FormField
           label="Event Category"
           value={values.category ?? ""}
@@ -79,7 +79,7 @@ export default function StructuredForm({
           <p className="error-text">{errors.category.message as string}</p>
         ) : null}
 
-        {/* Guests */}
+        
         <FormField
           label="Estimated Guest Count"
           value={values.guests?.toString() ?? ""}
@@ -102,7 +102,7 @@ export default function StructuredForm({
           <p className="error-text">{errors.guests.message as string}</p>
         ) : null}
 
-        {/* Budget */}
+        
         <FormField
           label="Budget Level"
           value={values.budget ?? ""}
@@ -124,7 +124,7 @@ export default function StructuredForm({
           <p className="error-text">{errors.budget.message as string}</p>
         ) : null}
 
-        {/* Vibe */}
+        
         <FormField
           label="Primary Vibe"
           value={values.vibe ?? ""}

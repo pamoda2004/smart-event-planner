@@ -24,7 +24,7 @@ function guessBudget(text) {
 
 function guessGuests(text) {
   
-  const match = text.match(/\b(\d{1,6})\b/); // Digits 1-6 (50, 200, 1500)
+  const match = text.match(/\b(\d{1,6})\b/); 
   if (!match) return null;
   const n = parseInt(match[1], 10);
   if (!Number.isFinite(n) || n <= 0) return null;
@@ -47,7 +47,7 @@ function guessVibe(text) {
   ];
   const found = vibes.find((v) => t.includes(v));
   if (!found) return null;
-  // Capitalize first letter
+  
   return found.charAt(0).toUpperCase() + found.slice(1);
 }
 

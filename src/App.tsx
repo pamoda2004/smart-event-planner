@@ -44,8 +44,7 @@ function App() {
     setTimeout(() => setToast(null), 2500);
   }
 
-  // Call backend after 1.5s debounce
-  useEffect(() => {
+  useEffect(() => {  
     const run = async () => {
       if (!debounced.trim()) {
         setSuggestion({});
@@ -86,14 +85,14 @@ function App() {
     run();
   }, [debounced]);
 
-  // Apply one field from AI suggestion
+  
   function applyField(key: keyof FormValues) {
     const v = suggestion[key];
     if (v === undefined) return;
     form.setValue(key, v as any, { shouldDirty: true, shouldValidate: true });
   }
 
-  // Accept all fields from AI suggestion
+  
   function acceptAll() {
     (Object.keys(suggestion) as (keyof FormValues)[]).forEach((k) => {
       const v = suggestion[k];
@@ -105,13 +104,13 @@ function App() {
 
   return (
     <>
-      {/* Decorative floating orbs */}
+      
       <div className="floating-orb orb-1" />
       <div className="floating-orb orb-2" />
       <div className="floating-orb orb-3" />
 
       <div className="app-container">
-        {/* Header */}
+        
         <header className="app-header">
           <div className="header-icon">✨</div>
           <h1>
@@ -124,7 +123,7 @@ function App() {
           </p>
         </header>
 
-        {/* Two-panel layout */}
+       
         <div className="panels-grid">
           <DescriptionPanel
             description={description}

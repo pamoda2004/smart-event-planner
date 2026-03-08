@@ -11,12 +11,12 @@ export function useDebounce<T>(value: T, delay: number): T {
   const [debouncedValue, setDebouncedValue] = useState<T>(value);
 
   useEffect(() => {
-    // Start a timer
+    
     const timer = setTimeout(() => {
       setDebouncedValue(value);
     }, delay);
 
-    // Cleanup previous timer if value changes before delay ends
+    
     return () => {
       clearTimeout(timer);
     };

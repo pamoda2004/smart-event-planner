@@ -76,7 +76,7 @@ body {
   position: relative;
 }
 
-/* ── Typography ── */
+
 h1 {
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 800;
@@ -95,13 +95,13 @@ p {
   margin-bottom: 0;
 }
 
-/* ── Gradient Text Utility ── */
+
 .gradient-text {
   color: var(--accent-purple);
   font-weight: 700;
 }
 
-/* ── Glassmorphism Card ── */
+
 .glass-card {
   background: rgba(22, 33, 62, 0.8);
   backdrop-filter: blur(20px);
@@ -119,7 +119,7 @@ p {
   border-color: rgba(148, 133, 232, 0.2);
 }
 
-/* ── App Layout ── */
+
 .app-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -157,7 +157,7 @@ p {
   margin: var(--space-md) auto;
 }
 
-/* ── Two-Column Grid ── */
+
 .panels-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -189,7 +189,7 @@ p {
   }
 }
 
-/* ── Form Elements ── */
+
 .form-input {
   width: 100%;
   border: 1px solid var(--border);
@@ -224,7 +224,7 @@ p {
   }
 }
 
-/* ── Buttons ── */
+
 button {
   font: inherit;
   cursor: pointer;
@@ -281,7 +281,7 @@ button {
   transform: none;
 }
 
-/* ── Panel Headers ── */
+
 .panel-header {
   display: flex;
   align-items: center;
@@ -299,7 +299,7 @@ button {
   font-size: 1.2rem;
 }
 
-/* ── Form Field ── */
+
 .form-field {
   margin-bottom: var(--space-md);
 }
@@ -350,7 +350,7 @@ button {
   }
 }
 
-/* ── Floating Orbs (Decorative BG) ── */
+
 .floating-orb {
   position: fixed;
   border-radius: 50%;
@@ -387,7 +387,7 @@ button {
   animation: floatOrb3 12s ease-in-out infinite;
 }
 
-/* ── Keyframe Animations ── */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -498,7 +498,7 @@ button {
   }
 }
 
-/* ── Select Styling ── */
+
 select.form-input {
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2394a3b8' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
